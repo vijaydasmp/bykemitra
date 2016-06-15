@@ -1,0 +1,74 @@
+<template name="personalInfoCard">
+<div class="container">
+    <div class="row">
+        <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+         |  <A href="/updatepersonalInfo">Edit <i class="fa fa-pencil" aria-hidden="true"> </i> </A>
+             |
+            <A href="/bookServicing">Book Servicing <i class="fa fa-road"></i></A>|
+            <br>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{customerinfo.name}} @ {{customerinfo.office}} in {{customerinfo.area}}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 " align="center"> 
+                            <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png"
+                            
+                                class="img-circle img-responsive"> </div>
+
+                        <div class=" col-md-9 col-lg-9 ">
+                            <table class="table table-user-information">
+                                <tbody>
+                                    <tr>
+                                        <td>Name:-</td>
+                                        <td>{{customerinfo.name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Company:-</td>
+                                        <td>{{customerinfo.office}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address:-</td>
+                                        <td>{{customerinfo.office}} {{customerinfo.area}} {{customerinfo.city}} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Preferred Pickup Time:-</td>
+                                        <td>Morning 11:00 a.m</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Desired Delivery Time:-</td>
+                                        <td>Evening 04:30 p.m</td>
+                                    </tr>
+                                    <tr>
+                                        <tr>
+                                            <td>Area:- </td>
+                                            <td>{{customerinfo.area}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email:</td>
+                                            <td>{{customerinfo.email}}</td>
+                                        </tr>
+                                        <td>Phone Number :-<br> {{customerinfo.contact}}</td>
+                     
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <a href="#" class="btn btn-primary">My Vehicles <i class="fa fa-motorcycle" aria-hidden="true"></i>
+</a>
+                            <a href="#" class="btn btn-primary">Orders History <i class="fa fa-list" aria-hidden="true"></i>
+</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>
+</template>
