@@ -11,7 +11,7 @@
                          {{> quickForm collection="Customers" id="updatePersonalInfo" doc=this type="update" meteormethod="documentUpdateMethod"}}
                       {{/with}}
                       {{else}}
-                         Loading ...
+                         {{> spinner}}
                       {{/if}}
                  </div>
              </div>
