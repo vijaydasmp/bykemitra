@@ -37,7 +37,7 @@ CustomersSchema = new SimpleSchema({
         unique: true
     },
     'office': {
-        type: String  // A person can work at multiple office location like Hinjewadi & Magarpatta offices
+        type: String,  // A person can work at multiple office location like Hinjewadi & Magarpatta offices
     },
     'city': {
         type: String  // A person can work at multiple office location like Hinjewadi & Magarpatta offices
@@ -72,10 +72,7 @@ CustomersSchema = new SimpleSchema({
     },
     "owner": {
         type: String,
-        label: "Ownerid",
-        autoValue: function () {
-            return this.userId;
-        },
+        label: "myOwnerid",
         autoform: {
             type: "hidden"
         }

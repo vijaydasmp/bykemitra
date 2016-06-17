@@ -6,5 +6,13 @@
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0"
-  }
+  },
+  "public": {
+        "reCaptcha": {
+            "siteKey": "6LfcwiITAAAAAGuV1j36G7iGgtKFr4vpxI2OdcpJ"
+        }
+    },
+    "reCaptcha": {
+        "secretKey": "6LfcwiITAAAAAL6uJaCXMBHZpSWB9NgL6KaBUSvy"
+    }
 }
