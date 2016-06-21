@@ -1,5 +1,134 @@
 <template name="HomeLayout">
  {{> header}}
+
+<head>
+    <title>Service My Bike</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFPDa40hrW-0FArz8Pm0p0pcqEySCM58&v=3.exp&libraries=places"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/dist/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead-addresspicker/0.1.4/typeahead-addresspicker.min.js"></script>
+
+</head>
+<style>
+.jumbotron { 
+    background-color: #f2511f; /* Orange */
+    background-image:url(bikemitra.jpg);
+    height: 100%;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom:5%;
+    padding-left:10%;
+    background-repeat: no-repeat;
+    /* Image in the center of container */
+    background-position: center center;
+
+    color: blue;
+    text-shadow: grey 0.0em 0.0em 0.0em;
+    color: #ffffff;
+}
+</style>
+<body>
+  
+   <div class="jumbotron container-fluid text-bottom content">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <form class="form-inline" role="form" align="center">
+        {{#if currentUser}} 
+        {{else}}
+        <div class="form-group">
+          {{> whichBike}}
+        </div>
+        <!--<div class="form-group">
+                    <input type="number" placeholder="Enter Contact Number" class="form-control" id="contactnumber">
+                </div> -->
+        <div class="form-group">
+          {{> where}}
+        </div>
+        {{/if}}
+        <div class="form-group dropdown">
+          <button class="btn btn-primary   dropdown-toggle" type="button" data-toggle="dropdown">Book
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+           <li><a href="#">[General Paid Service] Rs 299*</a></li>
+           <li><a href="#">[General Free Service]</a></li>                                
+            <li><a href="#">[Repair Job     ] (Schedule Inspection)</a> </li>
+            <li><a href="#">[Bike Wash      ] Rs 49</a></li>
+          </ul>
+        </div>
+        <div class="form-group checkbox">
+          <label align="right"><input type="checkbox"> Fast Forward </label>
+        </div>
+      </form>
+    </div>
+    <!-- Select Service Station Caraousel-->
+    <div id="ServiceStations" class="carousel slide" data-ride="carousel">
+           <p align="center">Service Stations near you {{customerlocation}}</p>
+     <!--{{> tabular table=TabularTables.Partners class="table table-striped table-bordered table-condensed"}}-->
+       </div>
+    </body> 
+    
+    <!-- {{> services}} -->
+  
+ </template>
+
+<!-- Sub Templates -->
+<!--  whichBike Template-->
+<!-- Typeahead template-->
+<template name="whichBike">
+   <input class="form-control typeahead" name="bikes" type="text" placeholder="Which Bike do you ride ?" autocomplete="off" spellcheck="off"  data-source="bikes"/>
+ </template>
+
+<!--  where Template-->
+
+<template name="where"> 
+  <input type="text" placeholder="where is your office ?" class="form-control" id="address" name="myaddress">
+</template>
+
+
+<!--   Services we offer Template-->
+<!-- Container (Services Section) -->
+<template name="services">
+<div class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off"></span>
+      <h4>NIRVANA</h4>
+      <p>Free Bike Pickup & Drop off from Home,Office,Movies</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart"></span>
+      <h4>LOVE</h4>
+      <p>30 Days Warranty on Repairs</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock"></span>
+      <h4>STAY CALM</h4>
+      <p>Breakdown Assistance 9860501299</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf"></span>
+      <h4>LOST KEY PROTECTION</h4>
+      <p>Get your Duplicate Keys with in 60 Mins*</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate"></span>
+      <h4>CERTIFIED</h4>
+      <p>Certified & Vetted Service Stations</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench"></span>
+      <h4 style="color:#303030;">FEEDBACK & RATINGS</h4>
+      <p>Make Informed Choice</p>
+    </div>
+  </div>
+</div>
  
  <!--<div class="g-recaptcha" data-sitekey="6LfcwiITAAAAAGuV1j36G7iGgtKFr4vpxI2OdcpJ"></div>-->
  {{> footer}}

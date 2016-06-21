@@ -43,9 +43,9 @@ ian:accounts-ui-bootstrap-3
 accounts-password
 accounts-facebook
 accounts-google
-accounts-github
+#accounts-github
 accounts-twitter
-accounts-meetup
+#accounts-meetup
 #Email related packages
 gfk:mailgun-api
 service-configuration

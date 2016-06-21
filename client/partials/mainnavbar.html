@@ -23,7 +23,20 @@
 		<ul class="nav navbar-nav navbar-right">
 			<!--{{> loginButtons}}-->
             {{#if currentUser}}
-             <a href="/logout"> <h5>logout</h5></a>
+             <!--<a href="/logout"> <h5>logout</h5></a>-->
+              <div class="btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 You !
+                </button>
+                <div class="dropdown-menu">
+                  <ul>
+                  <li> <a class="dropdown-item" href="/profile">Profile</a> </li>
+                  <li><a class="dropdown-item" href="#">change password </a></li>
+                  <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+
             {{else}}
                <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Login / Signup </button></li>  
              {{/if}}            

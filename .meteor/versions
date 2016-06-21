@@ -1,8 +1,6 @@
 accounts-base@1.2.7
 accounts-facebook@1.0.9
-accounts-github@1.0.9
 accounts-google@1.0.9
-accounts-meetup@1.0.9
 accounts-oauth@1.1.12
 accounts-password@1.1.8
 accounts-twitter@1.0.9
@@ -44,7 +42,6 @@ fastclick@1.0.11
 fortawesome:fontawesome@4.5.0
 geojson-utils@1.0.8
 gfk:mailgun-api@1.1.0
-github@1.1.8
 google@1.1.11
 gwendall:auth-client-callbacks@0.1.0
 hot-code-push@1.0.4
@@ -63,7 +60,6 @@ localstorage@1.0.9
 logging@1.0.12
 matb33:bootstrap-base@10.0.0
 matb33:bootstrap-glyphicons@10.0.0
-meetup@1.6.4
 meteor@1.1.14
 meteor-base@1.0.4
 meteortoys:allthings@3.0.0
