@@ -11,14 +11,14 @@ Customers.allow({
             return false;
         }
     },
-   update: function () {
+    update: function () {
         if (Meteor.userId()) {
             return true;
         }
         else {
             return false;
         }
-    } 
+    }
 });
 CustomersSchema = new SimpleSchema({
     "name": {
@@ -43,8 +43,8 @@ CustomersSchema = new SimpleSchema({
         type: String  // A person can work at multiple office location like Hinjewadi & Magarpatta offices
     },
     'area': {
-        type: String  // A person can work at multiple office location like Hinjewadi & Magarpatta offices
-    },
+        type: String,  // A person can work at multiple office location like Hinjewadi & Magarpatta offices
+     },
     'pickup': {
         type: Number,
         min: 800,           // Morning 8 am to Evening 8 p.m.  

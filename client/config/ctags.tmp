@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_MOD_BY	Bostjan Mihoric	/ccompletion@gmail.com/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	/unofficial modification/
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	/unofficial modification/
+Meteor.Spinner.options.corners	spinner.js	5;"	property
+Meteor.Spinner.options.length	spinner.js	2;"	property
+Meteor.Spinner.options.lines	spinner.js	1;"	property
+Meteor.Spinner.options.radius	spinner.js	4;"	property
+Meteor.Spinner.options.width	spinner.js	3;"	property
+myLogoutFunc	accountsConfig.js	7;"	function

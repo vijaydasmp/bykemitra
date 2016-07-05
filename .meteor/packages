@@ -39,13 +39,21 @@ twbs:bootstrap
 sacha:spin
 #Accounts related packages
 useraccounts:bootstrap
-ian:accounts-ui-bootstrap-3
+#ian:accounts-ui-bootstrap-3
 accounts-password
 accounts-facebook
 accounts-google
+pauli:accounts-linkedin
 #accounts-github
 accounts-twitter
 #accounts-meetup
 #Email related packages
 gfk:mailgun-api
 service-configuration
+aldeed:tabular
+abhiaiyer:meteor-twilio
+#dispatch:accounts-sms
+#okland:accounts-phone
+#kenlane22:accounts-phone
+ecwyne:nexmo-sms
+useraccounts:flow-routing

@@ -5,3 +5,8 @@ Meteor.publish('CustomersPersonalInfo', function () {
 Meteor.publish('VehiclesInfo', function () {
    return Vehicles.find({owner:this.userId}); 
 });
+
+Meteor.publish('ServiceStationInfo',function () {
+   return ServiceStation.find({}); 
+});
+

@@ -1,15 +1,15 @@
 <template name="HomeLayout">
- {{> header}}
+ <!--{{> header}} -->
 
 <head>
     <title>Service My Bike</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFPDa40hrW-0FArz8Pm0p0pcqEySCM58&v=3.exp&libraries=places"></script>   
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFPDa40hrW-0FArz8Pm0p0pcqEySCM58&v=3.exp&libraries=places"></script>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/dist/typeahead.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead-addresspicker/0.1.4/typeahead-addresspicker.min.js"></script>
-
+-->
 </head>
 <style>
 .jumbotron { 
@@ -63,18 +63,20 @@
     </div>
     <!-- Select Service Station Caraousel-->
     <div id="ServiceStations" class="carousel slide" data-ride="carousel">
-           <p align="center">Service Stations near you {{customerlocation}}</p>
-     <!--{{> tabular table=TabularTables.Partners class="table table-striped table-bordered table-condensed"}}-->
-       </div>
+           <p align="center">Service Stations near your office </p>
+            <!--{{> tabular table=TabularTables.ServiceStation class="table table-striped table-bordered table-condensed"}}-->
+    </div>
     </body> 
     
+    
     <!-- {{> services}} -->
-  
+ <!--{{> myfooter}}-->
  </template>
 
 <!-- Sub Templates -->
 <!--  whichBike Template-->
 <!-- Typeahead template-->
+
 <template name="whichBike">
    <input class="form-control typeahead" name="bikes" type="text" placeholder="Which Bike do you ride ?" autocomplete="off" spellcheck="off"  data-source="bikes"/>
  </template>
@@ -88,7 +90,7 @@
 
 <!--   Services we offer Template-->
 <!-- Container (Services Section) -->
-<template name="services">
+<!--<template name="services">
 <div class="container-fluid text-center">
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
@@ -131,5 +133,5 @@
 </div>
  
  <!--<div class="g-recaptcha" data-sitekey="6LfcwiITAAAAAGuV1j36G7iGgtKFr4vpxI2OdcpJ"></div>-->
- {{> footer}}
- </template>
+ <!--
+ </template>-->

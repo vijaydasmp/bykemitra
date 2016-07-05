@@ -1,5 +1,10 @@
 <template name="MainLayout">
     {{> header}}
+
+    <div class="nav">
+     {{> Template.dynamic template=nav}}
+    </div>
+  
     <main>
         {{> Template.dynamic template=main}}
     </main>  
@@ -8,4 +13,4 @@
     {{> Template.dynamic template=footer}}
   </footer>
 
-</template>
+ </template>
