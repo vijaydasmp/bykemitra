@@ -1,0 +1,2 @@
+https://atmospherejs.com/ian/accounts-ui-bootstrap-3
+https://forums.meteor.com/t/is-there-any-package-for-hindi-language/22194/3
