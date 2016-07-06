@@ -31,13 +31,13 @@
                 <div class="dropdown-menu">
                   <ul>
                   <li> <a class="dropdown-item" href="/profile">Profile</a> </li>
-                  <li><a class="dropdown-item" href="#">change password </a></li>
+                  <li><a class="dropdown-item" href="/changepasswd">change password </a></li>
                   <li><a class="dropdown-item" href="/logout">Logout</a></li>
                   </ul>
                 </div>
               </div>
 
-            {{else}}
+            {{else}}               
                <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Login / Signup </button></li>  
              {{/if}}            
 		</ul>
@@ -57,6 +57,25 @@
                     </div>
                     <div class="modal-body">
                       {{> atForm}}
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+           <div id="changePwdModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Login / Register</h4>
+                    </div>
+                    <div class="modal-body">
+                      {{> atForm state='changePwd'}}
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

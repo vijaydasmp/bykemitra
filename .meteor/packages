@@ -48,7 +48,8 @@ pauli:accounts-linkedin
 accounts-twitter
 #accounts-meetup
 #Email related packages
-gfk:mailgun-api
+#gfk:mailgun-api
+email
 service-configuration
 aldeed:tabular
 abhiaiyer:meteor-twilio

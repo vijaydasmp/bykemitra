@@ -30,14 +30,14 @@ AccountsTemplates.addFields([
         _id: 'phone',
         type: 'tel',
         displayName: "Phone",
-        func: function (number) {
+        /*func: function (number) {
         if (Meteor.isServer){
           if (isValidPhone(number))
               return true; // meaning no error!
           return false; // Validation error!
         }
         },
-        errStr: 'Invalid Phone number!',
+        errStr: 'Invalid Phone number!',*/
         required:true
     },
     /*{
