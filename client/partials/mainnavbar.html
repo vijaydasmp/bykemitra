@@ -37,8 +37,9 @@
                 </div>
               </div>
 
-            {{else}}               
-               <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Login / Signup </button></li>  
+            {{else}}
+                <li><a href="/accounts">Login / Signup   </a> </li>
+               <!--<li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Login / Signup </button></li>  -->
              {{/if}}            
 		</ul>
         </div>
@@ -46,42 +47,5 @@
 
 	</div>
 </div>
-       <!-- Modal -->
-              <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
 
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Login / Register</h4>
-                    </div>
-                    <div class="modal-body">
-                      {{> atForm}}
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              
-           <div id="changePwdModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Login / Register</h4>
-                    </div>
-                    <div class="modal-body">
-                      {{> atForm state='changePwd'}}
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
 </template>
