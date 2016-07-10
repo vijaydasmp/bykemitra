@@ -2,14 +2,17 @@ import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
   // code to run on server at startup
-  smtp = {
-    username: 'postmaster@sandboxaa8a4925fb244df1a8f579c957947561.mailgun.org',
-    password: '3eaf9f1a939cc82fe1da37c63081baad',
+  /*smtp = {
+    username: 'postmaster@bikemitra.com',
+    password: '56ea81e20c7deb65193244604da6138d',
     server:   'smtp.mailgun.org',  // eg: mail.gandi.net
     port: 587
-  }
+  }*/
   //process.env.MAIL_URL = 'smtp://' + encodeURIComponent(smtp.username) + ':' + encodeURIComponent(smtp.password) + '@' + encodeURIComponent(smtp.server) + ':' + smtp.port;
-   process.env.MAIL_URL = 'smtp://postmaster@sandboxaa8a4925fb244df1a8f579c957947561.mailgun.org:3eaf9f1a939cc82fe1da37c63081baad@smtp.mailgun.org:587'
+  username = Meteor.settings.mailgun.username;
+  
+   process.env.MAIL_URL = 'smtp://'+Meteor.settings.mailgun.username+':'+Meteor.settings.mailgun.password+'@'+Meteor.settings.mailgun.server+':'+'587'
+   console.log("MAIL_URL  "+process.env.MAIL_URL);
 });
 
 

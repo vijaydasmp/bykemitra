@@ -17,5 +17,16 @@ Meteor.methods({
         //  var verificationCode = vcode;   
         //Accounts.verifyPhone(userPhone, verificationCode, function(){});
         //console.log('Phone verification status is :', Accounts.isPhoneVerified());
+    },
+    'Vehicles.insert': function (Make, BikeNumber, NickName) {
+        if (!Meteor.userId()) {
+            throw new Meteor.Error('not-authorized');
+        } else {
+            console.log("New Bike Added");
+            Vehicles.insert({
+                make: Make, regnumber: BikeNumber, nickname: NickName,
+                owner: Meteor.userId()
+            });
+        }
     }   
 });

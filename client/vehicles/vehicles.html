@@ -1,0 +1,51 @@
+<template name="VehiclesInfo">
+  <body>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+   <br> <br><br> <br><br> <br>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                 Add New Bike
+                </div>
+                
+                    <div class="tab-pane" id="addnewbike">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label class="sr-only" for="makeofbike">TVS</label>
+                        <input type="text" data-toggle="tooltip" data-placement="bottom" title="which bike do you ride ?" class="form-control" id="make"
+                          placeholder="TVS Apache 160">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="registration">MH12EY8021</label>
+                        <input type="text" data-toggle="tooltip" data-placement="bottom" title="Your Bikes Registration Number" class="form-control" id="registrationnumber"
+                          placeholder="MH12EY8021">
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" onclick="this.form.nickname.style.visibility = this.checked? 'visible' : 'hidden';"> Set NickName</label>
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="nickname">Rambo</label>
+                        <input data-toggle="tooltip" style="visibility: hidden" maxlength="7" size="7" data-placement="bottom" title="Rambo" class="form-control" id="nickname" placeholder="Rambo">
+                      </div>
+                      <button type="submit" data-action="Vehicle/insert" class="btn btn-primary btn-xs">  <i class="fa fa-plus-square-o" aria-hidden="true"> Bike</i></button>
+                
+                    </form>
+                        </div>
+            </div>
+  </div>
+        <hr>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            Bikes List
+          </div>
+
+          <!--<p align="center"><h3> My Bikes </h3></p>-->
+          <div class="w3-container w3-pale-blue w3-leftbar w3-border-blue">
+            <!--{{> tabular table=TabularTables.Vehicles class="table"}}-->
+            {{> tabular table=TabularTables.Vehicles class="table table-striped table-bordered table-condensed"}}
+
+          </div>
+        </div>
+  </div>
+  </body>
+</template>
