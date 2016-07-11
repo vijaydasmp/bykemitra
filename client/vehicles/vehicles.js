@@ -8,7 +8,7 @@ Template.VehiclesInfo.events({
         var Make = $('[id=make]').val();
         var BikeNumber = $('[id=registrationnumber]').val();
         var NickName = $('[id=nickname]').val();
-        var id =  Meteor.userId();
+        //var id =  Meteor.userId();
         console.log("Inserting vehicle document  "+Make+"  "+BikeNumber+"   "+NickName);
         Meteor.call('Vehicles.insert',Make,BikeNumber,NickName); 
 }
