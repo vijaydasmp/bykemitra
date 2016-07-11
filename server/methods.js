@@ -24,8 +24,7 @@ Meteor.methods({
         } else {
             console.log("New Bike Added");
             Vehicles.insert({
-                make: Make, regnumber: BikeNumber, nickname: NickName,
-                owner: Meteor.userId()
+                make: Make, regnumber: BikeNumber, nickname: NickName
             });
         }
     }   
