@@ -12,8 +12,10 @@ accountkey	nexmo.js	1;"	variable
 apiSecret	nexmo.js	2;"	variable
 authToken	twilio.js	27;"	variable
 callback	nexmo.js	15;"	function
-isValidPhone	init.js	9;"	function
+isValidPhone	init.js	11;"	function
 mySubmitFunc	accountsConfig.js	13;"	function
+options.apiKey	mailgun.js	1;"	property
+options.domain	mailgun.js	2;"	property
 opts.a	nexmo.js	15;"	property
 postSignup	accountsConfig.js	0;"	function
 preSignup	accountsConfig.js	26;"	function
